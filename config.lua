@@ -90,6 +90,8 @@ Config.Disable = {
     driveby = false,                                              -- disables driveby
 }
 
+Config.RelieveWeedStress = math.random(15, 20) -- stress relief amount (100 max)
+
 Config.Consumables = {
     eat = { -- default food items
         ['sandwich'] = math.random(35, 54),
@@ -223,22 +225,6 @@ Config.BlacklistedPeds = {
     [`s_f_y_sheriff_01`] = true,
     [`s_f_y_cop_01`] = true,
     [`s_m_y_hwaycop_01`] = true
-}
-
-Config.WeapDraw = {
-    variants = { 130, 122, 3, 6, 8 },
-    weapons = {
-        --'WEAPON_STUNGUN',
-        'WEAPON_PISTOL',
-        'WEAPON_PISTOL_MK2',
-        'WEAPON_COMBATPISTOL',
-        'WEAPON_APPISTOL',
-        'WEAPON_PISTOL50',
-        'WEAPON_REVOLVER',
-        'WEAPON_SNSPISTOL',
-        'WEAPON_HEAVYPISTOL',
-        'WEAPON_VINTAGEPISTOL'
-    }
 }
 
 Config.Objects = { -- for object removal
