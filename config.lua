@@ -51,21 +51,21 @@ Config.AIResponse = {
 -- To Set This Up visit https://forum.cfx.re/t/how-to-updated-discord-rich-presence-custom-image/157686
 Config.Discord = {
     isEnabled = true,                                     -- If set to true, then discord rich presence will be enabled
-    applicationId = '00000000000000000',                   -- The discord application id
+    applicationId = GetConvar('discord_application_id', ''),                   -- The discord application id
     iconLarge = 'lsm_logo',                               -- The name of the large icon
-    iconLargeHoverText = 'Los Santos Metropolis RP', -- The hover text of the large icon
+    iconLargeHoverText = 'A FiveM Roleplay server', -- The hover text of the large icon
     iconSmall = 'violent_tones_logo',                         -- The name of the small icon
-    iconSmallHoverText = 'A FiveM server by Violent Tones', -- The hover text of the small icon
+    iconSmallHoverText = 'Created by Violent Tones', -- The hover text of the small icon
     updateRate = 60000,                                    -- How often the player count should be updated
     showPlayerCount = true,                                -- If set to true the player count will be displayed in the rich presence
-    maxPlayers = 48,                                       -- Maximum amount of players
+    maxPlayers = 64,                                       -- Maximum amount of players
     buttons = {
         {
             text = 'Play now!',
             url = 'https://cfx.re/join/4364ro'
         },
         {
-            text = 'Join us on discord.',
+            text = 'Join discord',
             url = 'https://discord.gg/QZnZpZsAjA'
         }
     }
@@ -83,10 +83,10 @@ Config.Disable = {
     hudComponents = { 1, 2, 3, 4, 7, 9, 13, 19, 20, 21, 22 }, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
     controls = { 37 },                                            -- Controls: https://docs.fivem.net/docs/game-references/controls/
     displayAmmo = true,                                           -- false disables ammo display
-    ambience = false,                                             -- disables distance sirens, distance car alarms, flight music, etc
+    ambience = true,                                             -- disables distance sirens, distance car alarms, flight music, etc
     idleCamera = true,                                            -- disables the idle cinematic camera
     vestDrawable = false,                                         -- disables the vest equipped when using heavy armor
-    pistolWhipping = true,                                        -- disables pistol whipping
+    pistolWhipping = false,                                        -- disables pistol whipping
     driveby = false,                                              -- disables driveby
 }
 
