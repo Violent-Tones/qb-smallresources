@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
 local Webhooks = {
-    ['default'] = '',
+    ['default'] = GetConvar('qb-smallresources_default_webhook', ''),
     ['testwebhook'] = '',
     ['playermoney'] = '',
     ['playerinventory'] = '',
@@ -39,6 +39,7 @@ local Webhooks = {
     ['palert'] = '',
     ['house'] = '',
     ['qbjobs'] = '',
+    ['ps-adminmenu'] = GetConvar('ps-adminmenu_webhook', ''),
 }
 
 local colors = { -- https://www.spycolor.com/
