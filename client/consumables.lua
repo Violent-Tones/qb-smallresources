@@ -466,12 +466,12 @@ RegisterNetEvent('consumables:client:UseHeavyArmor', function()
                 if GetPedDrawableVariation(ped, 9) == 7 then
                     SetPedComponentVariation(ped, 9, 19, GetPedTextureVariation(ped, 9), 2)
                 else
-                    SetPedComponentVariation(ped, 9, 5, 2, 2)
+                    SetPedComponentVariation(ped, 9, 7, 1, 2)
                 end
             else
                 currVest = GetPedDrawableVariation(ped, 30)
                 currVestTexture = GetPedTextureVariation(ped, 30)
-                SetPedComponentVariation(ped, 9, 30, 0, 2)
+                SetPedComponentVariation(ped, 9, 5, 1, 2)
             end
         end
         TriggerServerEvent('consumables:server:useHeavyArmor')
