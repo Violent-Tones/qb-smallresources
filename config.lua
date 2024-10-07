@@ -52,8 +52,8 @@ Config.AIResponse = {
 Config.Discord = {
     isEnabled = true,                                     -- If set to true, then discord rich presence will be enabled
     applicationId = GetConvar('discord_application_id', ''),                   -- The discord application id
-    iconLarge = 'lsm_logo',                               -- The name of the large icon
-    iconLargeHoverText = 'A FiveM Roleplay server', -- The hover text of the large icon
+    iconLarge = 'toxicity_logo',                               -- The name of the large icon
+    iconLargeHoverText = 'toxicity rp', -- The hover text of the large icon
     iconSmall = 'violent_tones_logo',                         -- The name of the small icon
     iconSmallHoverText = 'Created by Violent Tones', -- The hover text of the small icon
     updateRate = 60000,                                    -- How often the player count should be updated
@@ -61,11 +61,11 @@ Config.Discord = {
     maxPlayers = 64,                                       -- Maximum amount of players
     buttons = {
         {
-            text = 'Play now!',
+            text = 'Play Now!',
             url = 'https://cfx.re/join/4364ro'
         },
         {
-            text = 'Join discord',
+            text = 'Join Discord',
             url = 'https://discord.gg/QZnZpZsAjA'
         }
     }
