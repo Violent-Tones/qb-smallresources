@@ -94,10 +94,11 @@ Config.RelieveWeedStress = math.random(15, 20) -- stress relief amount (100 max)
 
 Config.Consumables = {
     eat = { -- default food items
-        ['sandwich'] = math.random(35, 54),
-        ['tosti'] = math.random(40, 50),
-        ['twerks_candy'] = math.random(35, 54),
-        ['snikkel_candy'] = math.random(40, 50)
+        ['sandwich'] = math.random(5, 15),
+        ['tosti'] = math.random(10, 15),
+        ['twerks_candy'] = math.random(1, 10),
+        ['snikkel_candy'] = math.random(5, 15),
+        ['burger'] = math.random(15, 30)
     },
     drink = { -- default drink items
         ['water_bottle'] = math.random(35, 54),
